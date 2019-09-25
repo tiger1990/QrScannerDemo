@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="zxing_view">
+        <attr name="zxing_scanner_layout" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="zxing_camera_preview">
+        <attr name="zxing_framing_rect_width" format="dimension" />
+        <attr name="zxing_framing_rect_height" format="dimension" />
+        <attr name="zxing_use_texture_view" format="boolean" />
+        <attr name="zxing_preview_scaling_strategy" format="enum">
+            <enum name="centerCrop" value="1" />
+            <enum name="fitCenter" value="2" />
+            <enum name="fitXY" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="view_finder">
+
+        <attr name="result_points_color" format="color"/>
+        <attr name="result_view_color" format="color"/>
+        <attr name="shouldScaleToFill" format="boolean" />
+        <attr name="laserEnabled" format="boolean" />
+        <attr name="laserColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderLength" format="dimension" />
+        <attr name="roundedCorner" format="boolean" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="squaredFinder" format="boolean" />
+        <attr name="borderAlpha" format="float" />
+        <attr name="finderOffset" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ZoomableTextureView">
+        <attr name="minScale" format="float" />
+        <attr name="maxScale" format="float" />
+    </declare-styleable>
+
+</resources>

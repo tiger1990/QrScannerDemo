@@ -1,0 +1,2 @@
+include ':app',':zing_embedded',':zxing_core'
+

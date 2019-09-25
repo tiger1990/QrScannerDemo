@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airtel.barcodescanner.BarcodeView
+            android:id="@+id/barcodeSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <TextView
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:background="@color/zxing_transparent"
+            android:text="@string/zxing_msg_default_status"
+            android:textColor="@color/zxing_status_text" />
+
+    <com.airtel.barcodescanner.AnimatedViewFinder
+            android:id="@+id/animatedFinderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cornerRadius="10dp"
+            app:laserColor="@color/zxing_viewfinder_laser"
+            app:laserEnabled="true"
+            app:maskColor="@color/zxing_viewfinder_mask"
+            app:result_points_color="@color/zxing_possible_result_points"
+            app:result_view_color="@color/zxing_result_view"
+            app:roundedCorner="true"
+            app:squaredFinder="true" />
+
+    <LinearLayout
+            android:id="@+id/flashGalleryParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/flashlight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/vector_flash_off" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/galleryPicker"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/vector_gallery" />
+    </LinearLayout>
+</merge>
