@@ -138,6 +138,9 @@ public class DecoderThread {
     private void decode(SourceData sourceData) {
         long start = System.currentTimeMillis();
         Result rawResult = null;
+        if(cropRect == null) {
+            cropRect = new Rect(0,0,sourceData.getDataHeight(), sourceData.getDataWidth());
+        }
         sourceData.setCropRect(cropRect);
         LuminanceSource source = createSource(sourceData);
 
