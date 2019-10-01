@@ -34,9 +34,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
 
-    api 'com.google.zxing:core:3.4.0'
-
-   // api project(":zxing_core")
+    //api 'com.google.zxing:core:3.4.0'
+    api project(":zxing_core")
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

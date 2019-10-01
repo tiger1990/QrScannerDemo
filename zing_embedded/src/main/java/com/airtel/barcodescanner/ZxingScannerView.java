@@ -210,9 +210,6 @@ public class ZxingScannerView extends FrameLayout implements AnimatedViewFinder.
 
         String characterSet = intent.getStringExtra(Intents.Scan.CHARACTER_SET);
 
-        MultiFormatReader reader = new MultiFormatReader();
-        reader.setHints(decodeHints);
-
         barcodeView.setCameraSettings(settings);
         barcodeView.setDecoderFactory(new DefaultDecoderFactory(decodeFormats, decodeHints, characterSet, scanType));
     }

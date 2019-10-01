@@ -16,6 +16,8 @@
 
 package com.google.zxing.qrcode.detector;
 
+import android.os.Build;
+
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.NotFoundException;
 import com.google.zxing.ResultPoint;
@@ -25,6 +27,7 @@ import com.google.zxing.common.BitMatrix;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -611,7 +614,10 @@ public class FinderPatternFinder {
       throw NotFoundException.getNotFoundInstance();
     }
 
-    possibleCenters.sort(moduleComparator);
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+      possibleCenters.sort(moduleComparator);
+     else
+       Collections.sort(possibleCenters, moduleComparator);
 
     double distortion = Double.MAX_VALUE;
     double[] squares = new double[3];
