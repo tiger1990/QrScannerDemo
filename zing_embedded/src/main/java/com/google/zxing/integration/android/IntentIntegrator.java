@@ -24,7 +24,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import com.google.zxing.client.android.Intents;
-import com.airtel.barcodescanner.CaptureActivity;
+import com.qrscanner.barcodescanner.CaptureActivity;
 
 import java.util.Arrays;
 import java.util.Collection;

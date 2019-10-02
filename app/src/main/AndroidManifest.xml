@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.airtel.qrscandemo">
+          package="com.qrscanner.qrscandemo">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera"/>
@@ -18,7 +18,7 @@
             android:theme="@style/AppTheme">
 
         <activity
-                android:name="com.airtel.embedded.zxing.MainActivity"
+                android:name="com.qrscanner.embedded.zxing.MainActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme">
             <intent-filter>
@@ -27,35 +27,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.airtel.embedded.zxing.ZxingScannerActivity"
+        <activity android:name="com.qrscanner.embedded.zxing.ZxingScannerActivity"
                 android:screenOrientation="portrait"></activity>
         <activity
-                android:name="com.airtel.embedded.zxing.AnyOrientationCaptureActivity"
+                android:name="com.qrscanner.embedded.zxing.AnyOrientationCaptureActivity"
                 android:screenOrientation="fullSensor"
                 android:stateNotNeeded="true"
                 android:theme="@style/zxing_CaptureTheme"
                 android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-                android:name="com.airtel.embedded.zxing.ToolbarCaptureActivity"
+                android:name="com.qrscanner.embedded.zxing.ToolbarCaptureActivity"
                 android:clearTaskOnLaunch="true"
                 android:screenOrientation="portrait"
                 android:stateNotNeeded="true"
                 android:theme="@style/AppCompatCaptureTheme"
                 android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-                android:name="com.airtel.embedded.zxing.CustomScannerActivity"
+                android:name="com.qrscanner.embedded.zxing.CustomScannerActivity"
                 android:screenOrientation="fullSensor"
                 android:stateNotNeeded="true"
                 android:theme="@style/zxing_CaptureTheme"
                 android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-                android:name="com.airtel.embedded.zxing.SmallCaptureActivity"
+                android:name="com.qrscanner.embedded.zxing.SmallCaptureActivity"
                 android:screenOrientation="fullSensor"
                 android:stateNotNeeded="true"
                 android:theme="@style/zxing_CaptureTheme"
                 android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-                android:name="com.airtel.embedded.zxing.TabbedScanning"
+                android:name="com.qrscanner.embedded.zxing.TabbedScanning"
                 android:theme="@style/Theme.AppCompat"
                 android:label="@string/title_activity_tabbed_scanning"></activity>
 

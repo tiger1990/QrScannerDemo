@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        package="com.airtel.zing_embedded">
+        package="com.qrscanner.zing_embedded">
 
 <uses-permission android:name="android.permission.CAMERA"/>
 
@@ -16,7 +16,7 @@
 
 
 <application>
-    <activity android:name="com.airtel.barcodescanner.CaptureActivity"
+    <activity android:name="com.qrscanner.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"
             android:screenOrientation="sensorLandscape"
             android:stateNotNeeded="true"

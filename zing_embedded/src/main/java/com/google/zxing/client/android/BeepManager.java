@@ -25,7 +25,7 @@ import android.media.MediaPlayer;
 import android.os.Vibrator;
 import android.util.Log;
 
-import com.airtel.zing_embedded.R;
+import com.qrscanner.zing_embedded.R;
 
 import java.io.IOException;
 

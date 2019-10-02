@@ -22,7 +22,7 @@ import android.hardware.Camera;
 import android.os.Build;
 import android.util.Log;
 
-import com.airtel.barcodescanner.camera.CameraSettings;
+import com.qrscanner.barcodescanner.camera.CameraSettings;
 
 import java.util.Arrays;
 import java.util.Collection;

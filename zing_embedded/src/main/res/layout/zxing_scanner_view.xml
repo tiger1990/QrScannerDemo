@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.airtel.barcodescanner.BarcodeView
+    <com.qrscanner.barcodescanner.BarcodeView
             android:id="@+id/barcodeSurface"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -17,7 +17,7 @@
             android:text="@string/zxing_msg_default_status"
             android:textColor="@color/zxing_status_text" />
 
-    <com.airtel.barcodescanner.AnimatedViewFinder
+    <com.qrscanner.barcodescanner.AnimatedViewFinder
             android:id="@+id/animatedFinderView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

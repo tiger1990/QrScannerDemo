@@ -23,8 +23,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Handler;
 
-import com.airtel.barcodescanner.camera.CameraManager;
-import com.airtel.barcodescanner.camera.CameraSettings;
+import com.qrscanner.barcodescanner.camera.CameraManager;
+import com.qrscanner.barcodescanner.camera.CameraSettings;
 
 /**
  * Detects ambient light and switches on the front light when very dark, and off again when sufficiently light.

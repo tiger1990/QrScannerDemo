@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.airtel.barcodescanner.ZxingScannerView
+    <com.qrscanner.barcodescanner.ZxingScannerView
         android:id="@+id/zxing_barcode_scanner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:zxing_scanner_layout="@layout/custom_barcode_scanner">
-    </com.airtel.barcodescanner.ZxingScannerView>
+    </com.qrscanner.barcodescanner.ZxingScannerView>
 
     <Button
         android:id="@+id/switch_flashlight"

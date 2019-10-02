@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:name="com.airtel.embedded.zxing.MainActivity$ScanFragment" tools:layout="@layout/fragment_scan" />
+            android:name="com.qrscanner.embedded.zxing.MainActivity$ScanFragment" tools:layout="@layout/fragment_scan" />
 
 
         <Button

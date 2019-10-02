@@ -20,7 +20,7 @@
     <!--
     This Activity is typically full-screen. Therefore we can safely use centerCrop scaling with
     a SurfaceView, without fear of weird artifacts. -->
-    <com.airtel.barcodescanner.ZxingScannerView
+    <com.qrscanner.barcodescanner.ZxingScannerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/zxing_barcode_scanner"
