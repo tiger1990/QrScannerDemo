@@ -26,6 +26,7 @@ import com.google.zxing.client.android.BeepManager
 import kotlinx.android.synthetic.main.continuous_scan.*
 import java.io.File
 import java.io.IOException
+import java.util.*
 
 /**
  * Created by B0204525 on 13,September,2019
@@ -71,10 +72,14 @@ class ZxingScannerActivity : AppCompatActivity(), ZxingScannerView.TorchListener
             this.cameraSettings.isScanInverted = true
             this.cameraSettings.isExposureEnabled = true
 
-            val formats = listOf(BarcodeFormat.QR_CODE, BarcodeFormat.CODE_39)
+            val formats = BarcodeFormat.values().toMutableList()
             this.barcodeView.decoderFactory = DefaultDecoderFactory(formats)
             this.initializeFromIntent(intent)
             this.decodeContinuous(callback)
+        }
+
+        barcodeView?.galleryPicker?.setOnClickListener{
+            pickImage()
         }
     }
 
@@ -144,10 +149,10 @@ class ZxingScannerActivity : AppCompatActivity(), ZxingScannerView.TorchListener
             if (intent.resolveActivity(packageManager) != null) {
 
                 intent.type = "image/*"
-                intent.putExtra("crop", "true")
-                intent.putExtra("scale", true)
-                intent.putExtra("aspectX", 16)
-                intent.putExtra("aspectY", 9)
+//                intent.putExtra("crop", "true")
+//                intent.putExtra("scale", true)
+//                intent.putExtra("aspectX", 16)
+//                intent.putExtra("aspectY", 9)
                 startActivityForResult(intent, PICK_IMAGE_REQUEST_CODE)
             }
         } else {

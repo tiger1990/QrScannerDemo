@@ -73,7 +73,7 @@ public class ContinuousCaptureActivity extends Activity implements ZxingScannerV
         barcodeView.getCameraSettings().setScanInverted(true);
         barcodeView.getCameraSettings().setExposureEnabled(true);
 
-        Collection<BarcodeFormat> formats = Arrays.asList(BarcodeFormat.QR_CODE, BarcodeFormat.CODE_39);
+        Collection<BarcodeFormat> formats = Arrays.asList(BarcodeFormat.values());
         barcodeView.getBarcodeView().setDecoderFactory(new DefaultDecoderFactory(formats));
         barcodeView.initializeFromIntent(getIntent());
         barcodeView.decodeContinuous(callback);
